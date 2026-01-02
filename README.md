@@ -1,26 +1,57 @@
-# 🍎 AI Fruit Analyzer
+# 🍎 LLM Vision Fruit Disease Detection
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![React](https://img.shields.io/badge/React-18.2-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.109-009688?logo=fastapi&logoColor=white)](https://fastapi.tiangolo.com/)
 [![Python](https://img.shields.io/badge/Python-3.9+-3776AB?logo=python&logoColor=white)](https://python.org/)
+[![Anaconda](https://img.shields.io/badge/Anaconda-44A833?logo=anaconda&logoColor=white)](https://www.anaconda.com/)
 
-**Multi-LLM Powered Agricultural Disease Detection Platform**
+**Multi-LLM Vision Platform for Agricultural Disease Detection**
 
-A professional full-stack web application that uses multiple Large Language Models (LLMs) to detect diseases in fruits through image analysis.
+A professional full-stack web application that leverages multiple Large Language Models (LLMs) with vision capabilities to detect diseases in fruits and vegetables through image analysis.
 
-![Dashboard Preview](docs/preview.gif)
+---
+
+## 🎬 Demo
+
+![Demo Preview](assets/dashboard-preview.gif)
+
+---
+
+## 📊 Dataset
+
+This project uses the **Fruit and Vegetable Disease Dataset** from Kaggle:
+
+🔗 **[Download Dataset](https://www.kaggle.com/datasets/muhammad0subhan/fruit-and-vegetable-disease-healthy-vs-rotten)**
+
+### Covered Fruits & Vegetables:
+| Fruits | Vegetables |
+|--------|------------|
+| 🍎 Apple | 🫑 Bell Pepper |
+| 🍌 Banana | 🥕 Carrot |
+| 🍇 Grape | 🥒 Cucumber |
+| 🍊 Orange | 🥔 Potato |
+| 🍑 Peach | 🍅 Tomato |
+| 🍐 Pear | 🌽 Corn |
+| 🍍 Pineapple | 🥬 Lettuce |
+| 🍓 Strawberry | 🧅 Onion |
+| 🍉 Watermelon | 🥦 Broccoli |
+| 🥭 Mango | 🍆 Eggplant |
+
+### Dataset Categories:
+- ✅ **Healthy** — Fresh, disease-free samples
+- ❌ **Rotten/Diseased** — Various disease conditions
 
 ---
 
 ## ✨ Features
 
-- 🤖 **Multi-LLM Support** — Choose from 5 AI models:
-  - 🟣 Claude (Anthropic)
-  - 🟢 GPT-4 Vision (OpenAI)
-  - 🔵 Gemini Pro (Google)
-  - 🟠 DeepSeek
-  - ⚫ Grok (xAI)
+- 🤖 **Multi-LLM Support** — Choose from 5 AI vision models:
+  - 🟣 **Claude** (Anthropic)
+  - 🟢 **GPT-4 Vision** (OpenAI)
+  - 🔵 **Gemini Pro** (Google)
+  - 🟠 **DeepSeek**
+  - ⚫ **Grok** (xAI)
 
 - 🔐 **Secure API Key Input** — Password-protected field, never stored
 - 📷 **Drag & Drop Upload** — Easy image upload interface
@@ -44,6 +75,7 @@ A professional full-stack web application that uses multiple Large Language Mode
 | Technology | Purpose |
 |------------|---------|
 | Python 3.9+ | Runtime |
+| Anaconda | Environment Management |
 | FastAPI | API Framework |
 | httpx | Async HTTP Client |
 | Pydantic | Data Validation |
@@ -53,7 +85,7 @@ A professional full-stack web application that uses multiple Large Language Mode
 ## 📁 Project Structure
 
 ```
-ai-fruit-analyzer/
+llm-vision-fruit-analyzer/
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
@@ -72,8 +104,13 @@ ai-fruit-analyzer/
 ├── backend/
 │   ├── main.py
 │   └── requirements.txt
-├── docs/
-│   └── preview.gif
+├── assets/
+│   └── dashboard-preview.gif
+├── Screenshots/
+│   ├── screen_1.png
+│   ├── screen_2.png
+│   ├── screen_3.png
+│   └── screen_4.png
 ├── .gitignore
 ├── LICENSE
 └── README.md
@@ -84,22 +121,27 @@ ai-fruit-analyzer/
 ## 🚀 Quick Start
 
 ### Prerequisites
+- [Anaconda](https://www.anaconda.com/download) or Miniconda
 - Node.js 18+
-- Python 3.9+
-- API key from at least one provider
+- API key from at least one LLM provider
 
 ### 1. Clone Repository
 ```bash
-git clone https://github.com/DaneshShokri94/ai-fruit-analyzer.git
-cd ai-fruit-analyzer
+git clone https://github.com/DaneshShokri94/llm-vision-fruit-analyzer.git
+cd llm-vision-fruit-analyzer
 ```
 
-### 2. Setup Backend
+### 2. Setup Backend (with Anaconda)
 ```bash
+# Create conda environment
+conda create -n fruit-analyzer python=3.10 -y
+conda activate fruit-analyzer
+
+# Install dependencies
 cd backend
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
+
+# Run server
 python main.py
 ```
 
@@ -121,7 +163,7 @@ Visit `http://localhost:3000`
 |----------|-------------|
 | Anthropic (Claude) | [console.anthropic.com](https://console.anthropic.com/) |
 | OpenAI (GPT-4) | [platform.openai.com](https://platform.openai.com/) |
-| Google (Gemini) | [makersuite.google.com](https://makersuite.google.com/) |
+| Google (Gemini) | [aistudio.google.com](https://aistudio.google.com/) |
 | DeepSeek | [platform.deepseek.com](https://platform.deepseek.com/) |
 | xAI (Grok) | [x.ai](https://x.ai/) |
 
@@ -129,20 +171,32 @@ Visit `http://localhost:3000`
 
 ## 📸 Screenshots
 
-### Model Selection
-![Model Selection](docs/models.png)
+### Configuration Panel
+![Configuration](Screenshots/screen_1.png)
 
-### Analysis Results
-![Analysis Results](docs/results.png)
+### Image Upload
+![Upload](Screenshots/screen_2.png)
+
+### Analysis in Progress
+![Analysis](Screenshots/screen_3.png)
+
+### Results
+![Results](Screenshots/screen_4.png)
 
 ---
 
-## 🔒 Security
+## 🦠 Detectable Diseases
 
-- API keys are **never stored** on the server
-- Keys are only used for the current session
-- HTTPS recommended for production
-- CORS configured for security
+| Disease | Affected Fruits |
+|---------|-----------------|
+| Apple Scab | Apple |
+| Black Rot | Apple, Grape |
+| Citrus Canker | Orange, Lemon |
+| Powdery Mildew | Grape, Strawberry |
+| Anthracnose | Banana, Mango |
+| Bacterial Spot | Tomato, Pepper |
+| Late Blight | Potato, Tomato |
+| Leaf Spot | Various |
 
 ---
 
@@ -158,30 +212,12 @@ Visit `http://localhost:3000`
 
 ---
 
-## 🍎 Supported Fruits
+## 🔒 Security
 
-- Apples
-- Oranges
-- Bananas
-- Grapes
-- Tomatoes
-- Strawberries
-- Mangoes
-- Lemons
-- And more...
-
----
-
-## 🦠 Detectable Diseases
-
-- Apple Scab
-- Citrus Canker
-- Powdery Mildew
-- Black Rot
-- Anthracnose
-- Leaf Spot
-- Bacterial Blight
-- Various fungal infections
+- API keys are **never stored** on the server
+- Keys are only used for the current session
+- HTTPS recommended for production
+- CORS configured for security
 
 ---
 
@@ -244,6 +280,15 @@ MIT License - see [LICENSE](LICENSE) file
 
 ---
 
+## 📚 References
+
+- Dataset: [Fruit and Vegetable Disease Dataset](https://www.kaggle.com/datasets/muhammad0subhan/fruit-and-vegetable-disease-healthy-vs-rotten) by Muhammad Subhan
+- [Anthropic Claude API](https://docs.anthropic.com/)
+- [OpenAI GPT-4 Vision](https://platform.openai.com/docs/guides/vision)
+- [Google Gemini API](https://ai.google.dev/)
+
+---
+
 ## ⭐ Support
 
 If you find this project useful, please give it a star!
@@ -251,5 +296,5 @@ If you find this project useful, please give it a star!
 ---
 
 <p align="center">
-  Built with ❤️ using React, FastAPI, and Multiple LLMs
+  Built with ❤️ using React, FastAPI, Anaconda, and Multiple LLMs
 </p>
