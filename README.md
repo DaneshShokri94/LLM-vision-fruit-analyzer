@@ -12,11 +12,6 @@ A professional full-stack web application that leverages multiple Large Language
 
 ---
 
-## 🖥️ Live Demo
-
-[View Live Demo →](https://daneshshokri94.github.io/LLM-vision-fruit-analyzer/)
-
-
 ## 🎬 Demo
 
 ![Demo Preview](assets/dashboard-preview.gif)
