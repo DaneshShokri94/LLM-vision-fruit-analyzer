@@ -18,6 +18,23 @@ A professional full-stack web application that leverages multiple Large Language
 
 ---
 
+## 📸 Screenshots
+
+### Configuration Panel
+![Configuration](Screenshots/screen_1.png)
+
+### Image Upload
+![Upload](Screenshots/screen_2.png)
+
+### Analysis in Progress
+![Analysis](Screenshots/screen_3.png)
+
+### Results
+![Results](Screenshots/screen_4.png)
+
+---
+
+
 ## 📊 Dataset
 
 This project uses the **Fruit and Vegetable Disease Dataset** from Kaggle:
@@ -167,23 +184,7 @@ Visit `http://localhost:3000`
 | DeepSeek | [platform.deepseek.com](https://platform.deepseek.com/) |
 | xAI (Grok) | [x.ai](https://x.ai/) |
 
----
 
-## 📸 Screenshots
-
-### Configuration Panel
-![Configuration](Screenshots/screen_1.png)
-
-### Image Upload
-![Upload](Screenshots/screen_2.png)
-
-### Analysis in Progress
-![Analysis](Screenshots/screen_3.png)
-
-### Results
-![Results](Screenshots/screen_4.png)
-
----
 
 ## 🦠 Detectable Diseases
 
