@@ -18,7 +18,7 @@ A professional full-stack web application that leverages multiple Large Language
 
 ---
 
-## 📸 Screenshots
+## 📸 Screenshots - Results
 
 ### Configuration Panel
 ![Configuration](Screenshots/screen_1.png)
