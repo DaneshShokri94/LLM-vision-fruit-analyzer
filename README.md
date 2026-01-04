@@ -1,4 +1,4 @@
-# 🍎 LLM Vision Fruit Disease Detection
+# LLM Vision Fruit Disease Detection
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![React](https://img.shields.io/badge/React-18.2-61DAFB?logo=react&logoColor=white)](https://reactjs.org/)
