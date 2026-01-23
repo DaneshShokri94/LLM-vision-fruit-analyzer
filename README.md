@@ -12,7 +12,7 @@ A professional full-stack web application that leverages multiple Large Language
 
 ---
 
-## 🎬 Demo
+## Demo
 
 ![Demo Preview](assets/dashboard-preview.gif)
 
